@@ -4,11 +4,11 @@ Companion project to https://github.com/LarsKrogJensen/hz4-idle-evict-repro to i
 
 
 ### Scenario
-Same scenario, here the  
+Same scenario (where the aggregate is invoked on eviction callback)  
 
 #### Output
 
-Notice the jumps in the stats (users, sessions) while entries are very, very slowly being evicted.
+No jumps in stats and eviction is quick
 
 ```
 11:32:58.795 [main] INFO  com.hazelcast.core.LifecycleService - [10.192.35.218]:5701 [hz3-repro] [3.12.12] [10.192.35.218]:5701 is STARTED
